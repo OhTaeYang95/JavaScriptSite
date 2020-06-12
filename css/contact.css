@@ -1,0 +1,28 @@
+#contact {
+    background-color: var(--color-pink);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-large);
+    margin: 24px 0;
+}
+
+.contact__links i:hover {
+    transition: all var(--animation-duration) ease-in;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: var(--color-yellow);
+}
