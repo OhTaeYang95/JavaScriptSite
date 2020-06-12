@@ -124,7 +124,7 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter === null) {
     return;
   }
-
+  projectContainer.classList.add('anim-out');
   Projects.forEach((project) => {
     if (filter === '*' || filter === project.dataset.type) {
       project.classList.remove('invisivle');
