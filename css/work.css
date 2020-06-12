@@ -54,7 +54,7 @@
     justify-content: center;
 }
 
-.projects {
+.project {
     position: relative;
     display: flex;
     justify-content: center;
@@ -63,6 +63,10 @@
     height: 250px;
     margin: 2px;
     background-color: var(--color-light-white);
+}
+
+.project.invisivle {
+    display: none;
 }
 
 .project__img {
