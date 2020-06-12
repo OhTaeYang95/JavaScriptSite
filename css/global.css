@@ -51,10 +51,15 @@
     /* Size */
     --size-border-radius: 4px;
 
-
 }
 
-
+/* Button */
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
 
 
 /* Typography */

@@ -2,6 +2,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/font-awesome.css');
 @import "global.css";
 @import "navbar.css";
+@import "home.css";
+
 
 body {
     margin: 0;
