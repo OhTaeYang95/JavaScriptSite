@@ -12,6 +12,7 @@
     -moz-transition: all var(--animation-duration) ease-in;
     -ms-transition: all var(--animation-duration) ease-in;
     -o-transition: all var(--animation-duration) ease-in;
+    z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -38,7 +39,7 @@
     -moz-border-radius: var(--size-border-radius);
     -ms-border-radius: var(--size-border-radius);
     -o-border-radius: var(--size-border-radius);
-
+    user-select: none;
 }
 
 .navbar__menu__item.active {
