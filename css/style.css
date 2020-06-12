@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/font-awesome.css');
 @import "global.css";
+@import "navbar.css";
 
-* {
+body {
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
