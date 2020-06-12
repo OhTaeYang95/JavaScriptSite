@@ -1,10 +1,22 @@
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-pink);
+    background-color: transparent;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in;
+    -webkit-transition: all var(--animation-duration) ease-in;
+    -moz-transition: all var(--animation-duration) ease-in;
+    -ms-transition: all var(--animation-duration) ease-in;
+    -o-transition: all var(--animation-duration) ease-in;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-pink);
+    padding: 8px;
 }
 
 .navbar__menu {
