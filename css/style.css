@@ -3,20 +3,4 @@
 @import "global.css";
 @import "navbar.css";
 @import "home.css";
-
-
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    cursor: default;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
+@import "about.css";
