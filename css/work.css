@@ -111,7 +111,7 @@
     color: var(--color-white);
 }
 
-.projects:hover .projects__description {
+.project:hover .projects__description {
     opacity: 0.8;
     transform: translateY(0);
     -webkit-transform: translateY(0);
