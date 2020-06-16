@@ -124,14 +124,19 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter === null) {
     return;
   }
+  // projectContainer.classList.add('anim-out');
+
   projectContainer.classList.add('anim-out');
-  Projects.forEach((project) => {
-    if (filter === '*' || filter === project.dataset.type) {
-      project.classList.remove('invisivle');
-    } else {
-      project.classList.add('invisivle');
-    }
-  });
+  setTimeout(() => {
+    Projects.forEach((project) => {
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('invisivle');
+      } else {
+        project.classList.add('invisivle');
+      }
+    });
+    projectContainer.classList.remove('anim-out');
+  }, 300);
 });
 
 function scrollIntoView(selector) {

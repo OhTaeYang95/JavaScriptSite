@@ -41,11 +41,11 @@
     top: -20px;
     left: 4px;
     opacity: 0;
-    transition: all var(--animation-duration);
-    -webkit-transition: all var(--animation-duration);
-    -moz-transition: all var(--animation-duration);
-    -ms-transition: all var(--animation-duration);
-    -o-transition: all var(--animation-duration);
+    transition: all var(--animation-duration) ease-in;
+    -webkit-transition: all var(--animation-duration) ease-in;
+    -moz-transition: all var(--animation-duration) ease-in;
+    -ms-transition: all var(--animation-duration) ease-in;
+    -o-transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects {
@@ -53,15 +53,20 @@
     flex-wrap: wrap;
     justify-content: center;
     opacity: 1;
+    transition: all var(--animation-duration) ease-out;
+    -webkit-transition: all var(--animation-duration) ease-out;
+    -moz-transition: all var(--animation-duration) ease-out;
+    -ms-transition: all var(--animation-duration) ease-out;
+    -o-transition: all var(--animation-duration) ease-out;
 }
 
 .work__projects.anim-out {
     opacity: 0;
-    transform: scale(0.9) translateY(40px);
-    -webkit-transform: scale(0.9) translateY(40px);
-    -moz-transform: scale(0.9) translateY(40px);
-    -ms-transform: scale(0.9) translateY(40px);
-    -o-transform: scale(0.9) translateY(40px);
+    transform: scale(0.96) translateY(40px);
+    -webkit-transform: scale(0.96) translateY(40px);
+    -moz-transform: scale(0.96) translateY(40px);
+    -ms-transform: scale(0.96) translateY(40px);
+    -o-transform: scale(0.96) translateY(40px);
 }
 
 .project {
