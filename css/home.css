@@ -34,3 +34,7 @@
     -o-border-radius: 4px;
     color: var(--color-white);
 }
+
+.home__contact:hover {
+    background-color: var(--color-dark-pink);
+}

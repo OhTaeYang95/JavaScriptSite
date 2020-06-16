@@ -22,9 +22,13 @@
     padding: 8px;
 }
 
-.navbar__menu {
-    display: flex;
 
+
+.navbar__menu {
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: -16px;
+    display: flex;
 }
 
 .navbar__logo {

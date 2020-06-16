@@ -7,6 +7,7 @@
     -o-border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 
 .category__btn.selected .category__count,
@@ -37,9 +38,9 @@
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: -20px;
-    left: 4px;
+    right: 16px;
     opacity: 0;
     transition: all var(--animation-duration) ease-in;
     -webkit-transition: all var(--animation-duration) ease-in;
@@ -113,7 +114,7 @@
 }
 
 .projects__description h3 {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .project:hover .projects__description {
@@ -130,9 +131,13 @@
     display: block;
     position: relative;
     left: 50%;
-    width: 25px;
+    width: 100px;
     height: 2px;
-    margin-left: -12px;
+    transform: translatex(-50%);
     margin-top: 8px;
     background-color: var(--color-dark-white);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
 }

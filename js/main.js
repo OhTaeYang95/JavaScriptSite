@@ -19,26 +19,32 @@ document.addEventListener('scroll', () => {
 // Handle Scrolling When Tapping on The Navbar Menu
 
 const navbarMenu = document.querySelector('.navbar__menu');
-
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
   const link = target.dataset.link;
   if (link === null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
-
-  //    위에 이프랑 상관없는 별개의 조건이므로 이프를 새로 주어야 한다.
-  //    밑에 붙여봤자 리턴돼서 끝나유 ㅠㅠ 작동안함 ㅠㅠ
-  //      이프인 이유는... 이프는 괄호안에 넣은게 참이면 실행을 하라는 의미라 바로 실행시킬수 있는데
-  //      스위치는 주어진 조건과 케이스안에 내용이 맞냐 안맞냐 거든요... 필요한 조건이 하나여서
-  //       대조할게 없어서... 구현을 어떻게 해야할지 잘 모르겠어서 이프를 썼습니다.
-  // if (event.target.dataset.link) {
-  //   // 조건문을 여기서 구현하면 가독성이 떨어지기도 하고... 함수안에 많은 내용이 들어가는게 좋지 않다고
-  //   // 생각을 하므로 따로 함수를 만들어 구현하였어요
-  //   navbarBoaderBox();
-  // }
 });
+
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+//    위에 이프랑 상관없는 별개의 조건이므로 이프를 새로 주어야 한다.
+//    밑에 붙여봤자 리턴돼서 끝나유 ㅠㅠ 작동안함 ㅠㅠ
+//      이프인 이유는... 이프는 괄호안에 넣은게 참이면 실행을 하라는 의미라 바로 실행시킬수 있는데
+//      스위치는 주어진 조건과 케이스안에 내용이 맞냐 안맞냐 거든요... 필요한 조건이 하나여서
+//       대조할게 없어서... 구현을 어떻게 해야할지 잘 모르겠어서 이프를 썼습니다.
+// if (event.target.dataset.link) {
+//   // 조건문을 여기서 구현하면 가독성이 떨어지기도 하고... 함수안에 많은 내용이 들어가는게 좋지 않다고
+//   // 생각을 하므로 따로 함수를 만들어 구현하였어요
+//   navbarBoaderBox();
+// }
 
 // function navbarBoaderBox() {
 //   // 비교할때 필요하고, 이 한군데서만 사용이 되므로 지역변수로 선언!
