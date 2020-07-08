@@ -1,5 +1,5 @@
 #home {
-    background: url("/imgs/home-background.png") center/cover no-repeat;
+    background: url("https://ohtaeyang95.github.io/JavaScriptSite/imgs/home-background.png") center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -33,4 +33,8 @@
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     color: var(--color-white);
+}
+
+.home__contact:hover {
+    background-color: var(--color-dark-pink);
 }
