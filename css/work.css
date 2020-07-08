@@ -7,15 +7,16 @@
     -o-border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
     opacity: 1;
     top: 0;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
     background-color: var(--color-pink);
     color: var(--color-white);
@@ -37,15 +38,15 @@
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: -20px;
-    left: 4px;
+    right: 16px;
     opacity: 0;
-    transition: all var(--animation-duration);
-    -webkit-transition: all var(--animation-duration);
-    -moz-transition: all var(--animation-duration);
-    -ms-transition: all var(--animation-duration);
-    -o-transition: all var(--animation-duration);
+    transition: all var(--animation-duration) ease-in;
+    -webkit-transition: all var(--animation-duration) ease-in;
+    -moz-transition: all var(--animation-duration) ease-in;
+    -ms-transition: all var(--animation-duration) ease-in;
+    -o-transition: all var(--animation-duration) ease-in;
 }
 
 .work__projects {
@@ -53,15 +54,20 @@
     flex-wrap: wrap;
     justify-content: center;
     opacity: 1;
+    transition: all var(--animation-duration) ease-out;
+    -webkit-transition: all var(--animation-duration) ease-out;
+    -moz-transition: all var(--animation-duration) ease-out;
+    -ms-transition: all var(--animation-duration) ease-out;
+    -o-transition: all var(--animation-duration) ease-out;
 }
 
 .work__projects.anim-out {
     opacity: 0;
-    transform: scale(0.9) translateY(40px);
-    -webkit-transform: scale(0.9) translateY(40px);
-    -moz-transform: scale(0.9) translateY(40px);
-    -ms-transform: scale(0.9) translateY(40px);
-    -o-transform: scale(0.9) translateY(40px);
+    transform: scale(0.96) translateY(40px);
+    -webkit-transform: scale(0.96) translateY(40px);
+    -moz-transform: scale(0.96) translateY(40px);
+    -ms-transform: scale(0.96) translateY(40px);
+    -o-transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -108,10 +114,10 @@
 }
 
 .projects__description h3 {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
-.projects:hover .projects__description {
+.project:hover .projects__description {
     opacity: 0.8;
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -125,9 +131,13 @@
     display: block;
     position: relative;
     left: 50%;
-    width: 25px;
+    width: 100px;
     height: 2px;
-    margin-left: -12px;
+    transform: translatex(-50%);
     margin-top: 8px;
     background-color: var(--color-dark-white);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
 }
