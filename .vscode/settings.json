@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "JavaScriptSite"
+    "liveServer.settings.multiRootWorkspaceName": "JavaScriptSite",
+    "liveServer.settings.port": 5501
 }
