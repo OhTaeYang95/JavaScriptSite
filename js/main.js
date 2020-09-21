@@ -1,5 +1,6 @@
 'use strict';
 
+console.log("1");
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -48,7 +49,9 @@ document.addEventListener('scroll', () => {
 });
 
 arrowUp.addEventListener('click', () => {
-  scrollIntoView('#home', { behavior: 'smooth' });
+  scrollIntoView('#home', {
+    behavior: 'smooth'
+  });
 });
 
 const workBtnContainer = document.querySelector('.work__categories');
